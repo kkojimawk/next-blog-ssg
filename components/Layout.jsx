@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       </Head>
       <header className={styles.header}>
         <img className={utilStyles.borderCircle} src="/images/profile.png" />
-        <h1>{name}</h1>
+        <h1 className={utilStyles.heading2Xl}>{name}</h1>
       </header>
       <main>{children}</main>
     </div>
