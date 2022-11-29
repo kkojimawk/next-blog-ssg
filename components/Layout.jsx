@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+export const siteTitle = "Next.js Blog";
 const name = "Kojima";
 const Layout = ({ children, home }) => {
   return (
