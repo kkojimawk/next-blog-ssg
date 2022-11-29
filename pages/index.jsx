@@ -18,7 +18,7 @@ export const getStaticProps = async () => {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout>
+    <Layout home>
       <section className={utilStyle.headingMd}>
         <p>私はフロントエンドエンジニアです/好きな言語はJavaScriptです</p>
       </section>
@@ -33,8 +33,8 @@ export default function Home({ allPostsData }) {
                   className={styles.thumbnailImage}
                   src={thumbnail}
                   alt=""
-                  width={950}
-                  height={400}
+                  width={300}
+                  height={200}
                 />
               </Link>
               <Link href="/" className="time">
