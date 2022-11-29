@@ -1,15 +1,16 @@
 import Head from "next/head";
-import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
 
 const name = "Kojima";
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <img src="/images/profile.png" />
+      <header className={styles.header}>
+        <img className={utilStyles.borderCircle} src="/images/profile.png" />
         <h1>{name}</h1>
       </header>
       <main>{children}</main>
